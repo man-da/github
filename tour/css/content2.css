@@ -1,0 +1,417 @@
+@charset "UTF-8";
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: #fff;
+  color: #555;
+  font-size: 14px;
+  font-family: Verdana, Arial, Helvetica, sans-serif; }
+
+td, th, caption {
+  font-size: 14px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-size: 100%; }
+
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+  font-weight: normal; }
+
+a {
+  color: #555;
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: underline; }
+
+img {
+  border: none; }
+
+ol, ul, li {
+  list-style: none; }
+
+input, textarea, select, button {
+  font: 14px Verdana,Helvetica,Arial,sans-serif; }
+
+table {
+  border-collapse: collapse; }
+
+html {
+  overflow-y: scroll; }
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+.clearfix {
+  *zoom: 1; }
+
+* {
+  margin: 0; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #d4cbcb; }
+
+header {
+  background-color: #fff; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: Verdana,sans-serif; }
+
+.mySlides {
+  display: none; }
+
+#img11 {
+  display: block; }
+
+/* 幻灯片容器 */
+.slideshow-container {
+  max-width: 26.66667rem;
+  position: relative;
+  margin: auto; }
+
+/* 下一张 & 上一张 按钮 */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -0.58667rem;
+  padding: 0.42667rem;
+  color: white;
+  font-weight: bold;
+  font-size: 0.48rem;
+  transition: 0.6s ease;
+  border-radius: 0 0.08rem 0.08rem 0;
+  z-index: 5; }
+
+/* 定位 "下一张" 按钮靠右 */
+.next {
+  right: 0;
+  border-radius: 0.08rem 0 0 0.08rem; }
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8); }
+
+/* 标题文本 */
+.headText {
+  color: #f2f2f2;
+  font-size: 0.4rem;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0.77333rem;
+  text-align: center; }
+  .headText .special-scene {
+    margin-top: 0.8rem; }
+    .headText .special-scene .go-to {
+      width: 2.66667rem;
+      height: 0.88rem;
+      border: 0.05333rem solid #fff;
+      border-radius: 0.42667rem;
+      line-height: 0.88rem;
+      text-align: center;
+      margin: 0 auto; }
+      .headText .special-scene .go-to a {
+        font-size: 0.37333rem;
+        color: #fff; }
+  .headText p {
+    margin-top: 0.53333rem;
+    font-size: 0.74667rem;
+    color: #fff;
+    padding-top: 0.37333rem;
+    padding-bottom: 0.26667rem;
+    font-family: "微软雅黑"; }
+  .headText .combination {
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+    .headText .combination .picture {
+      width: 3.97333rem;
+      height: 0.05333rem;
+      margin-top: 0.13333rem; }
+      .headText .combination .picture img {
+        width: 100%;
+        height: 100%; }
+
+/* 数字文本 (1/3 等) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 0.32rem;
+  padding: 0.21333rem 0.32rem;
+  position: absolute;
+  top: 0; }
+
+/* 标记符号 */
+.dot {
+  cursor: pointer;
+  height: 0.34667rem;
+  width: 0.34667rem;
+  margin: 0 0.05333rem;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease; }
+
+.active, .dot:hover {
+  background-color: #717171; }
+
+/* 淡出动画 */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s; }
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+@keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+.place {
+  height: 39.46667rem;
+  width: 100%;
+  background-color: #fff; }
+  .place .banner2 {
+    height: 2.13333rem;
+    width: 100%;
+    position: relative; }
+    .place .banner2 img {
+      width: 100%;
+      height: 100%; }
+    .place .banner2 h1 {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-left: -2.4rem;
+      line-height: 2.13333rem;
+      text-align: center;
+      font-family: "楷体","楷体_GB2312";
+      font-size: 0.8rem;
+      z-index: 1;
+      font-weight: 900;
+      color: transparent;
+      background-color: green;
+      text-shadow: rgba(255, 255, 255, 0.5) 0 5px 6px, rgba(255, 255, 255, 0.2) 1px 3px 3px;
+      -webkit-background-clip: text; }
+  .place .place1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 9.06667rem;
+    width: 100%; }
+    .place .place1 .place1Banner {
+      font-family: "楷体","楷体_GB2312";
+      font-size: 0.64rem;
+      margin: 0.26667rem auto; }
+    .place .place1 .place1Content {
+      margin-top: 0.26667rem;
+      width: 100%;
+      height: 150 37.5rem;
+      display: flex; }
+      .place .place1 .place1Content .place1Img {
+        opacity: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: 100%; }
+        .place .place1 .place1Content .place1Img img {
+          width: 90%;
+          height: 90%;
+          border-radius: 0.26667rem;
+          overflow: hidden; }
+        .place .place1 .place1Content .place1Img img:hover {
+          opacity: 0.7; }
+        .place .place1 .place1Content .place1Img p {
+          margin-left: 0.26667rem;
+          font-size: 0.37333rem;
+          line-height: 0.58667rem; }
+          .place .place1 .place1Content .place1Img p span {
+            font-weight: bold; }
+
+.summer {
+  height: 18.66667rem;
+  width: 100%;
+  background-color: #fff; }
+  .summer .banner3 {
+    height: 2.13333rem;
+    width: 100%;
+    position: relative; }
+    .summer .banner3 img {
+      width: 100%;
+      height: 100%; }
+    .summer .banner3 h1 {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-left: -2.4rem;
+      line-height: 2.13333rem;
+      text-align: center;
+      font-family: "楷体","楷体_GB2312";
+      font-size: 0.8rem;
+      z-index: 1;
+      font-weight: 900;
+      color: transparent;
+      background-color: dodgerblue;
+      text-shadow: rgba(255, 255, 255, 0.5) 0 5px 6px, rgba(255, 255, 255, 0.2) 1px 3px 3px;
+      -webkit-background-clip: text; }
+  .summer .water {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    height: 16rem;
+    width: 100%; }
+    .summer .water .imgs {
+      width: 100%;
+      height: 2.66667rem;
+      display: flex;
+      justify-content: space-around;
+      align-items: center; }
+      .summer .water .imgs .Img {
+        opacity: 1;
+        border: 1px;
+        border-radius: 0.26667rem;
+        width: 30%;
+        height: 2.13333rem;
+        overflow: hidden;
+        position: relative; }
+        .summer .water .imgs .Img img {
+          width: 100%;
+          height: 100%; }
+        .summer .water .imgs .Img .waterText {
+          height: 0.8rem;
+          width: 100%;
+          position: absolute;
+          top: 0.8rem;
+          font-family: "楷体","楷体_GB2312";
+          font-size: 0.4rem;
+          line-height: 0.8rem;
+          text-align: center;
+          color: transparent;
+          -webkit-text-stroke: 1px #fff;
+          letter-spacing: 0.04em;
+          background-color: rgba(0, 0, 0, 0.3); }
+    .summer .water .place2 {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .summer .water .place2 .imgTop {
+        width: 95%;
+        height: 5.33333rem;
+        border-radius: 0.26667rem;
+        overflow: hidden; }
+        .summer .water .place2 .imgTop img {
+          width: 100%;
+          height: 100%; }
+      .summer .water .place2 .text {
+        margin-top: 0.64rem;
+        width: 90%;
+        font-size: 0.37333rem;
+        line-height: 0.64rem; }
+        .summer .water .place2 .text span {
+          font-weight: bold; }
+    .summer .water #wdsly {
+      display: flex; }
+    .summer .water #aqw {
+      display: none; }
+    .summer .water #ygha {
+      display: none; }
+
+.thisSeason {
+  height: 24rem;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .thisSeason .banner4 {
+    height: 2.13333rem;
+    width: 100%;
+    position: relative; }
+    .thisSeason .banner4 img {
+      width: 100%;
+      height: 100%; }
+    .thisSeason .banner4 h1 {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-left: -1.6rem;
+      line-height: 2.13333rem;
+      text-align: center;
+      font-family: "楷体","楷体_GB2312";
+      font-size: 0.8rem;
+      z-index: 1;
+      font-weight: 900;
+      color: transparent;
+      background-color: orangered;
+      text-shadow: rgba(255, 255, 255, 0.5) 0 5px 6px, rgba(255, 255, 255, 0.2) 1px 3px 3px;
+      -webkit-background-clip: text; }
+  .thisSeason .ImgBanner {
+    margin-top: 0.13333rem;
+    width: 100%;
+    height: 4.8rem;
+    position: relative; }
+    .thisSeason .ImgBanner img {
+      width: 100%;
+      height: 100%; }
+    .thisSeason .ImgBanner .textDes {
+      height: 1.06667rem;
+      width: 100%;
+      z-index: 1;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      opacity: 0.8; }
+      .thisSeason .ImgBanner .textDes p {
+        width: 100%;
+        overflow: hidden;
+        flex-wrap: nowrap;
+        font-size: 0.37333rem; }
+        .thisSeason .ImgBanner .textDes p span {
+          font-weight: bold; }
+  .thisSeason .text {
+    margin-top: 0.26667rem;
+    width: 95%;
+    height: 4.8rem; }
+    .thisSeason .text p {
+      font-size: 0.37333rem;
+      line-height: 0.69333rem; }
+      .thisSeason .text p span {
+        font-weight: bold; }
+
+.gongao {
+  width: 100%;
+  height: 0.8rem;
+  overflow: hidden;
+  line-height: 0.42667rem;
+  font-size: 0.42667rem;
+  font-family: '宋体';
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-weight: bold;
+  margin-top: 0.26667rem; }
+
+.gongao .scroll_begin, .gongao .scroll_end {
+  display: inline; }
+
+/*# sourceMappingURL=content2.css.map */

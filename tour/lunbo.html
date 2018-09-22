@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="black" name="apple-mobile-web-app-status-bar-style"  />
+  <meta content="telephone=no" name="format-detection" />
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <link rel="stylesheet" type="text/css" href="resources/css/sm/sm.min.css"/>
+  <link rel="stylesheet" type="text/css" href="resources/css/sm/sm-theme.css"/></head>
+  <!-- <link rel="stylesheet" type="text/css" href="../../resources/css/animate.css"></head>
+  -->
+<body>
+ 
+  
+<style type="text/css"> 
+#gongao{width:375px;height:30px;overflow:hidden;line-height:30px;font-size:13px;font-family:'宋体';background:#DDE5ED;color:#0C77CF;font-weight:bold;} 
+#gongao #scroll_begin, #gongao #scroll_end{display:inline} 
+</style> 
+<script type="text/javascript"> 
+function ScrollImgLeft(){ 
+var speed=50; 
+var scroll_begin = document.getElementById("scroll_begin"); 
+var scroll_end = document.getElementById("scroll_end"); 
+var scroll_div = document.getElementById("scroll_div"); 
+scroll_end.innerHTML=scroll_begin.innerHTML; 
+function Marquee(){ 
+if(scroll_end.offsetWidth-scroll_div.scrollLeft<=0) 
+scroll_div.scrollLeft-=scroll_begin.offsetWidth; 
+else 
+scroll_div.scrollLeft++; 
+} 
+var MyMar=setInterval(Marquee,speed); 
+scroll_div.onmouseover=function() {clearInterval(MyMar);} 
+scroll_div.onmouseout=function() {MyMar=setInterval(Marquee,speed);} 
+} 
+</script> 
+<div id="gongao"> 
+<div style="width:900px;height:30px;margin:0 auto;white-space: nowrap;overflow:hidden;" id="scroll_div" class="scroll_div"> 
+<div id="scroll_begin"> 
+      之所以在scroll_begin的div里面写这个多重复的文字，是因为这些文字的长度必须要大于scroll_div的div容器。如果小于div容易，则不会有一直滚动的效果。！！无缝滚动的内容宽度加起来必须要大于容器的宽度。！
+</div> 
+<div id="scroll_end"></div> 
+</div> 
+<script type="text/javascript">ScrollImgLeft();</script> 
+</div> 
+  <!--/*<script type='text/javascript' src='resources/js/seajs/sea.js' charset='utf-8'></script>
+  <script type='text/javascript' src='resources/js/seajs/seajs-preload.js' charset='utf-8'></script>
+  <script type='text/javascript' src='resources/js/zepto.min.js' charset='utf-8'></script>
+  <script type='text/javascript' src='resources/js/sm/sm.min.js' charset='utf-8'></script>
+  <script type='text/javascript' src='resources/js/app.js' charset='utf-8'></script>
+ <script type="text/javascript">seajs.use();</script>-->
+</body>
+</html>
